@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mapObject" class="com.jeongyongs.construct.MapObject">
+        <property name="map">
+            <map>
+                <entry key="map01" value="value01"/>
+                <entry key="map02" value="value02"/>
+                <entry key="map03" value="value03"/>
+                <entry key="map04" value="value04"/>
+            </map>
+        </property>
+    </bean>
+    
+</beans>

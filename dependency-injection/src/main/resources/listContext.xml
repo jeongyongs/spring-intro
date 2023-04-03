@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="listObject" class="com.jeongyongs.construct.ListObject">
+        <property name="list">
+            <list>
+                <value>list01</value>
+                <value>list02</value>
+                <value>list03</value>
+                <value>list04</value>
+            </list>
+        </property>
+    </bean>
+    
+</beans>
