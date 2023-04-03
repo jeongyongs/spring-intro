@@ -7,5 +7,31 @@
     <bean id="studentManagement" class="com.jeongyongs.student.StudentManagement">
         <constructor-arg ref="studentDao"/>
     </bean>
+    <bean id="injectionObject" class="com.jeongyongs.construct.InjectionObject">
+        <property name="name" value="Jeongyongs"/>
+    </bean>
+    <bean id="constructDi" class="com.jeongyongs.construct.ConstructDi">
+        <constructor-arg ref="injectionObject"/>
+    </bean>
+    <bean id="listObject" class="com.jeongyongs.construct.ListObject">
+        <property name="list">
+            <list>
+                <value>list01</value>
+                <value>list02</value>
+                <value>list03</value>
+                <value>list04</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="mapObject" class="com.jeongyongs.construct.MapObject">
+        <property name="map">
+            <map>
+                <entry key="map01" value="value01"/>
+                <entry key="map02" value="value02"/>
+                <entry key="map03" value="value03"/>
+                <entry key="map04" value="value04"/>
+            </map>
+        </property>
+    </bean>
 
 </beans>
