@@ -1,15 +1,14 @@
 package com.jeongyongs.keyword;
 
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Register {
 
+    @Resource
     private KeywordDao keywordDao;
 
-    @Autowired
-    public Register(KeywordDao keywordDao) {
-        this.keywordDao = keywordDao;
-        System.out.println("REG: register has been created.");
+    public Register() {
     }
 
     public void newKeyword(String key, String value) {
