@@ -1,7 +1,6 @@
 package com.jeongyongs.keyword;
 
 import jakarta.annotation.Resource;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class Register {
 
