@@ -1,13 +1,15 @@
 package com.jeongyongs.keyword;
 
-import jakarta.annotation.Resource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Register {
 
-    @Resource
     private KeywordDao keywordDao;
 
-    public Register() {
+    @Autowired
+    public Register(@Qualifier("usedDao") KeywordDao keywordDao) {
+        this.keywordDao = keywordDao;
     }
 
     public void newKeyword(String key, String value) {

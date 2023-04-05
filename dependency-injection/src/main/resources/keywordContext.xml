@@ -6,7 +6,11 @@
 
     <context:annotation-config/>
 
-    <bean id="keywordDao" class="com.jeongyongs.keyword.KeywordDao"/>
+    <bean id="keywordDao1" class="com.jeongyongs.keyword.KeywordDao">
+        <qualifier value="usedDao"/>
+    </bean>
+    <bean id="keywordDao2" class="com.jeongyongs.keyword.KeywordDao"/>
+    <bean id="keywordDao3" class="com.jeongyongs.keyword.KeywordDao"/>
     <bean id="register" class="com.jeongyongs.keyword.Register"/>
     <bean id="searcher" class="com.jeongyongs.keyword.Searcher"/>
 

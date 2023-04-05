@@ -1,12 +1,17 @@
 package com.jeongyongs.keyword;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 public class Searcher {
 
+    @Inject
+    @Named(value = "keywordDao1")
     private KeywordDao keywordDao;
 
-    @Autowired
+    public Searcher() {
+    }
+
     public Searcher(KeywordDao keywordDao) {
         this.keywordDao = keywordDao;
         System.out.println("SER: searcher has been created.");
