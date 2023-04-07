@@ -37,4 +37,5 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/spring-mvc/src/main/webapp/WEB-INF/
+spring-mvc/src/main/webapp/WEB-INF/lib/
+spring-mvc/src/main/webapp/WEB-INF/classes/
