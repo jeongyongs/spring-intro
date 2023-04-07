@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #cccccc;
+}
+
+header {
+    background-color: #333333;
+    padding: 5px 5px 10px 15px;
+}
+
+header h1 {
+    color: #f1f1f1;
+}
+
+main {
+    min-height: calc(100vh - 58px - 61px);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+main .window {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+main .window h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+main .window p {
+    text-align: center;
+    color: #333333;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px;
+}
+
+footer p {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+form label {
+    color: #333333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .textInput {
+    color: #333333;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+form .textInput:focus {
+    outline: 2px solid #3580f3;
+}
+
+form .button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    background-color: #3580f3;
+    padding: 15px;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-size: 15px;
+}
