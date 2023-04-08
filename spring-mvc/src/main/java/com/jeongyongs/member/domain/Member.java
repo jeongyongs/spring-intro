@@ -1,7 +1,5 @@
 package com.jeongyongs.member.domain;
 
-import org.springframework.stereotype.Component;
-
 public class Member {
     private long id;
     private String username;

@@ -20,6 +20,9 @@ public class LoginService {
         if (member == null) {
             return "No user";
         }
-        return "Hi, " + member.getName();
+        if (member.getPassword().equals(pw)) {
+            return "Hi, " + member.getName();
+        }
+        return "Password does not match.";
     }
 }
