@@ -15,14 +15,11 @@ public class LoginService {
         this.memberRepository = memberRepository;
     }
 
-    public String login(String id, String pw) {
+    public boolean login(String id, String pw) {
         Member member = memberRepository.findByUsername(id);
         if (member == null) {
-            return "No user";
+            return false;
         }
-        if (member.getPassword().equals(pw)) {
-            return "Hi, " + member.getName();
-        }
-        return "Password does not match.";
+        return member.getPassword().equals(pw);
     }
 }

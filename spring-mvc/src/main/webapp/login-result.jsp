@@ -19,6 +19,16 @@
         <div class="window">
             <h2>Login</h2>
             <p>${result}</p>
+            <%="<p>" + (session.getAttribute("user") != null ? session.getAttribute("user") : "-") + "</p>"%>
+            <%
+                for (Cookie cookie : request.getCookies()) {
+                    if (cookie.getName().equals("color")) {
+            %>
+            <p><%= cookie.getValue() %></p>
+            <%
+                    }
+                }
+            %>
         </div>
     </main>
     <footer>
